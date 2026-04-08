@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+</head>
+<body>
+    <section>
+        <div style="display: flex;">
+            <input id="nombre" type="text" placeholder="Introduzca su nombre...">
+            <button id="btn" onclick="mostrarMensaje()">Mostrar</button>
+        </div>
+        <p id="resultado"></p>
+    </section>
+    <script>
+        const parrafo = document.getElementById("resultado")
+        const campoEscrito = document.getElementById("nombre")
+        let nombreEscrito
+        function mostrarMensaje() {
+            nombreEscrito = campoEscrito.value
+            parrafo.innerHTML = "¡Hola, " + nombreEscrito + "!"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <section>
+        <div style="display: flex;">
+            <p>Hora al momento de la ultima pulsación del botón: </p>
+            <p id="resultado">Aún no se ha pulsado</p>
+        </div>
+        <button id="btn" onclick="mostrarMensaje()">Botón</button>
+    </section>
+    <script>
+        const parrafo = document.getElementById("resultado")
+        const ahora = new Date()
+        const hora = ahora.toLocaleTimeString()
+        function mostrarMensaje() {
+            parrafo.innerHTML = hora
+        }
+    </script>
+</body>
+</html>
