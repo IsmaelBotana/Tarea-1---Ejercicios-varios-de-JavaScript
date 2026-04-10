@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio4</title>
 </head>
+
 <body>
     <section>
         <div style="display: flex;">
@@ -15,11 +17,14 @@
     </section>
     <script>
         const parrafo = document.getElementById("resultado")
-        const ahora = new Date()
-        const hora = ahora.toLocaleTimeString()
+        let ahora
+        let hora
         function mostrarMensaje() {
+            ahora = new Date()
+            hora = ahora.toLocaleTimeString()
             parrafo.innerHTML = hora
         }
     </script>
 </body>
+
 </html>

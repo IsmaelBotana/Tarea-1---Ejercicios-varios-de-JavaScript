@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio2</title>
+    <title>Ejercicio7</title>
 </head>
 
 <body>
@@ -14,13 +14,23 @@
                 corporis velit maiores adipisci accusamus necessitatibus. Iure, ipsum ut. Velit architecto voluptas
                 itaque explicabo corporis accusamus illum.</p>
         </div>
-        <button id="btn" onclick="mostrarColor()">Botón</button>
+        <button id="btn" onclick="cambiarEstado()">Ocultar</button>
     </section>
     <script>
         const parrafo = document.getElementById("texto")
-
-        function mostrarColor() {
-            parrafo.style.color = "red"
+        const boton = document.getElementById("btn")
+        let visible = true
+        function cambiarEstado() {
+            if (visible) {
+                boton.innerHTML = "Mostrar"
+                parrafo.style.display = "none"
+                visible = false
+            }
+            else {
+                boton.innerHTML = "Ocultar"
+                parrafo.style.display = "block"
+                visible = true
+            }
         }
     </script>
 </body>

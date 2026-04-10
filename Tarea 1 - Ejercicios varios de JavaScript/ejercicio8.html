@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+</head>
+
+<body>
+    <section>
+        <div><img id="foto" src="https://picsum.photos/200/150?random=2" alt="Imagen"></div>
+        <button id="btn" onclick="cambiarImagen()">Botón</button>
+    </section>
+    <script>
+        const laImagen = document.getElementById("foto")
+        let aleatoriedad
+        function cambiarImagen() {
+            aleatoriedad = ((Math.random() * 10) + 1)
+            laImagen.src = "https://picsum.photos/200/150?random=" + aleatoriedad
+
+        }
+    </script>
+</body>
+
+</html>

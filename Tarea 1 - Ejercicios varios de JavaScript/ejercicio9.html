@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+</head>
+
+<body>
+    <section>
+        <div style="display: flex;">
+            <input id="tarea" type="text" placeholder="Introduzca la tarea...">
+            <button id="btn" onclick="ponerEnLista()">Añadir</button>
+        </div>
+        <ul id="lista"></ul>
+    </section>
+    <script>
+        const listado = document.getElementById("lista")
+        const tarea = document.getElementById("tarea")
+        let nombreTarea
+        function ponerEnLista() {
+            nombreTarea = tarea.value
+            listado.innerHTML += "<li>" + nombreTarea + "</li>"
+            tarea.value = ""
+        }
+    </script>
+</body>
+
+</html>

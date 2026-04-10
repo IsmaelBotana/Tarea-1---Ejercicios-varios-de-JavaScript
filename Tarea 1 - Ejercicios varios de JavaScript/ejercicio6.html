@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio6</title>
 </head>
+
 <body>
     <section>
         <div style="display: flex;">
@@ -16,20 +18,22 @@
             <p>Resultado: </p>
             <p id="resultado"></p>
         </div>
-        
+
     </section>
     <script>
         const parrafo = document.getElementById("resultado")
         const a = document.getElementById("num1")
         const b = document.getElementById("num2")
-        let x = Number(a.value)
-        let y = Number(b.value)
+        let x
+        let y
         let resultado
         function mostrarMensaje() {
-            //Por terminar
+            x = Number(a.value)
+            y = Number(b.value)
             resultado = x + y
             parrafo.innerHTML = resultado
         }
     </script>
 </body>
+
 </html>
